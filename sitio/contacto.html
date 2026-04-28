@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peaky Blinders — Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">PEAKY BLINDERS</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="la-serie.html">La Serie</a></li>
+        <li><a href="personajes.html">Reparto</a></li>
+        <li><a href="temporadas.html">Temporadas</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+      <a href="contacto.html" class="nav-cta active-cta">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero-simple">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span class="bc-sep">›</span>
+        <span>Contacto</span>
+      </div>
+      <h1 class="page-title">Contacto</h1>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACTO ===================== -->
+  <section class="contacto-section">
+    <div class="container">
+      <div class="contacto-grid">
+
+        <!-- Columna izquierda: info -->
+        <div class="contacto-info">
+          <span class="kicker">Datos e info de contacto</span>
+          <h2 class="contacto-title">Ponete<br>en contacto</h2>
+          <p class="contacto-desc">
+            ¿Tenés sugerencias, correcciones o simplemente querés
+            hablar de la serie? Este es un proyecto académico de fan
+            dedicado a Peaky Blinders. Tu mensaje es bienvenido.
+          </p>
+
+          <div class="contacto-items">
+            <div class="contacto-item">
+              <div class="contacto-icon">@</div>
+              <div class="contacto-item-text">
+                <span class="contacto-item-label">Email</span>
+                <span class="contacto-item-val">peakyblinders.fansite@gmail.com</span>
+              </div>
+            </div>
+            <div class="contacto-item">
+              <div class="contacto-icon">◎</div>
+              <div class="contacto-item-text">
+                <span class="contacto-item-label">Ubicación</span>
+                <span class="contacto-item-val">Buenos Aires, Argentina</span>
+              </div>
+            </div>
+            <div class="contacto-item">
+              <div class="contacto-icon">◷</div>
+              <div class="contacto-item-text">
+                <span class="contacto-item-label">Respuesta</span>
+                <span class="contacto-item-val">En menos de 48 horas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contacto-redes">
+            <span class="kicker" style="margin-bottom: 16px;">Redes</span>
+            <div class="contacto-redes-icons">
+              <a href="#" class="social-icon">Tw</a>
+              <a href="#" class="social-icon">Ig</a>
+              <a href="#" class="social-icon">Fb</a>
+              <a href="#" class="social-icon">Yt</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna derecha: formulario -->
+        <div class="contacto-form-wrap">
+          <span class="kicker">Formulario de contacto</span>
+          <form class="contacto-form" id="contacto-form" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre <span class="req">*</span></label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  required
+                  minlength="2"
+                  maxlength="50"
+                >
+                <span class="form-error" id="error-nombre"></span>
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido <span class="req">*</span></label>
+                <input
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Tu apellido"
+                  required
+                  minlength="2"
+                  maxlength="50"
+                >
+                <span class="form-error" id="error-apellido"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span class="req">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+              >
+              <span class="form-error" id="error-email"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">Asunto <span class="req">*</span></label>
+              <select id="asunto" name="asunto" required>
+                <option value="">Seleccioná un asunto</option>
+                <option value="sugerencia">Sugerencia de contenido</option>
+                <option value="correccion">Corrección de información</option>
+                <option value="consulta">Consulta general</option>
+                <option value="otro">Otro</option>
+              </select>
+              <span class="form-error" id="error-asunto"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje <span class="req">*</span></label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                placeholder="Escribí tu mensaje acá..."
+                required
+                minlength="20"
+                maxlength="1000"
+                rows="6"
+              ></textarea>
+              <span class="form-error" id="error-mensaje"></span>
+              <span class="form-counter" id="counter">0 / 1000</span>
+            </div>
+
+            <div class="form-group form-check">
+              <input type="checkbox" id="terminos" name="terminos" required>
+              <label for="terminos" class="check-label">
+                Acepto que este es un proyecto académico y que mi mensaje
+                será leído con fines educativos. <span class="req">*</span>
+              </label>
+              <span class="form-error" id="error-terminos"></span>
+            </div>
+
+            <button type="submit" class="form-submit">Enviar mensaje</button>
+
+          </form>
+
+          <!-- Mensaje de éxito -->
+          <div class="form-success" id="form-success">
+            <div class="form-success-icon">✓</div>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Gracias por escribirnos. Te respondemos en menos de 48 horas.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-logo">PEAKY BLINDERS</span>
+        <p class="footer-desc">
+          Fan site académico dedicado a la serie de BBC One creada por Steven Knight.
+          Todos los derechos de la serie pertenecen a Caryn Mandabach Productions y BBC Studios.
+        </p>
+        <div class="footer-socials">
+        <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="la-serie.html">La Serie</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="temporadas.html">Episodios</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">La familia</h4>
+        <ul>
+          <li><a href="personajes.html">Thomas Shelby</a></li>
+          <li><a href="personajes.html">Arthur Shelby</a></li>
+          <li><a href="personajes.html">Polly Gray</a></li>
+          <li><a href="personajes.html">Ada Shelby</a></li>
+          <li><a href="personajes.html">John Shelby</a></li>
+          <li><a href="personajes.html">Alfie Solomons</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Temporadas</h4>
+        <ul>
+          <li><a href="temporadas.html">Temporada 1 · 1919</a></li>
+          <li><a href="temporadas.html">Temporada 2 · 1921</a></li>
+          <li><a href="temporadas.html">Temporada 3 · 1924</a></li>
+          <li><a href="temporadas.html">Temporada 4 · 1925</a></li>
+          <li><a href="temporadas.html">Temporada 5 · 1929</a></li>
+          <li><a href="temporadas.html">Temporada 6 · 1934</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 — Peaky Blinders Fan Site. Todos los derechos reservados.</span>
+      <div class="footer-legal">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Contador de caracteres del textarea
+    const textarea = document.getElementById('mensaje');
+    const counter  = document.getElementById('counter');
+    textarea.addEventListener('input', () => {
+      counter.textContent = textarea.value.length + ' / 1000';
+    });
+
+    // Validación y envío
+    const form    = document.getElementById('contacto-form');
+    const success = document.getElementById('form-success');
+
+    function showError(id, msg) {
+      document.getElementById(id).textContent = msg;
+    }
+    function clearError(id) {
+      document.getElementById(id).textContent = '';
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let valid = true;
+
+      // Nombre
+      const nombre = document.getElementById('nombre').value.trim();
+      if (!nombre || nombre.length < 2) {
+        showError('error-nombre', 'El nombre debe tener al menos 2 caracteres.');
+        valid = false;
+      } else { clearError('error-nombre'); }
+
+      // Apellido
+      const apellido = document.getElementById('apellido').value.trim();
+      if (!apellido || apellido.length < 2) {
+        showError('error-apellido', 'El apellido debe tener al menos 2 caracteres.');
+        valid = false;
+      } else { clearError('error-apellido'); }
+
+      // Email
+      const email = document.getElementById('email').value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email || !emailRegex.test(email)) {
+        showError('error-email', 'Ingresá un email válido.');
+        valid = false;
+      } else { clearError('error-email'); }
+
+      // Asunto
+      const asunto = document.getElementById('asunto').value;
+      if (!asunto) {
+        showError('error-asunto', 'Seleccioná un asunto.');
+        valid = false;
+      } else { clearError('error-asunto'); }
+
+      // Mensaje
+      const mensaje = document.getElementById('mensaje').value.trim();
+      if (!mensaje || mensaje.length < 20) {
+        showError('error-mensaje', 'El mensaje debe tener al menos 20 caracteres.');
+        valid = false;
+      } else { clearError('error-mensaje'); }
+
+      // Términos
+      const terminos = document.getElementById('terminos').checked;
+      if (!terminos) {
+        showError('error-terminos', 'Debés aceptar los términos para continuar.');
+        valid = false;
+      } else { clearError('error-terminos'); }
+
+      if (valid) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+      }
+    });
+  </script>
+
+</body>
+</html>
